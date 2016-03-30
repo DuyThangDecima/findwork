@@ -26,14 +26,16 @@ Route::get('/', function () {
 |
 */
 
-Route::get('/homepage','HomepageController@index');
+//Trang chủ
+Route::get('/homepage','WorkController@goHomePage');
 
+//Tạo tài khoản
 Route::get('/dangkyntv',function () {
-    return view('registerntv');
+    return view('account/registerntv');
 });
 
-Route::get('/demo',function () {
-    return view('demo');
+Route::get('/dangkyntd',function () {
+    return view('account/registerntd');
 });
 
 

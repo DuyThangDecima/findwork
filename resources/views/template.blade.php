@@ -4,11 +4,14 @@
     <script src="{{Asset('assets/js/jquery-2.2.1.min.js')}}"></script>
 
     <script src="{{Asset('assets/js/jquery-validation/jquery.validate.js')}}"></script>
-
+    <script src="{{Asset('assets/js/jssor.slider.mini.js')}}"></script>
+    <script src="{{Asset('assets/js/jssor.slider.min.js')}}"></script>
+    <script src="{{Asset('assets/js/jssor.slider.debug.js')}}"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="{{Asset('assets/css/style.css')}}">
     <link rel="stylesheet" type="text/css" href="{{Asset('assets/css/nav.css')}}">
     <link rel="stylesheet" href="{{Asset('assets/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{Asset('assets/css/slide.css')}}">
 
     <script type="text/javascript">
         //        function openLogin(){
@@ -170,19 +173,19 @@
     </div>
 </nav>
 
-<hr style="width:100%;margin:0px;height:2px;padding: 0">
+{{--<hr style="width:100%;margin:0px;height:2px;padding: 0">--}}
 
 <!-- Hiển thị form đăng nhập ở đây trong homepage-->
 @yield('login_frame')
         <!-- Container -->
 <div style="width: 100%;background-color: #EEEEEE">
-    <div class="container-fw" style="background-color: white">
+    <div class="container-fw" style="background-color: white; padding-top: 0">
         @yield('content')
     </div>
 </div>
 
 <!-- Footer -->
-<div style="width: 100%;background-color: #222428">
+<div style="clear:both;width: 100%;background-color: #222428">
     <div class="container-fw">
         <div class="footer">
             <div style="float: left">

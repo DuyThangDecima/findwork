@@ -11,6 +11,7 @@ class HomepageController extends Controller
 {
     //
     function index(){
+
     	return view('homepage');
     }
 
