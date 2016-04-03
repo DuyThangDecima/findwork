@@ -13,20 +13,24 @@ class DatabaseSeeder extends Seeder
 
     public function run()
     {
-        foreach ($this->myChild as $childTable)
-            if (isset($childTable))
+        foreach ($this->myChild as $childTable){
+            if (isset($childTable)){
                 DB::table($childTable)->delete();
-        $this->call(TaiKhoan::class);
-        $this->call(Nganh::class);
-        $this->call(Tinh::class);
-        $this->call(HinhThuc::class);
-        $this->call(TrinhDo::class);
-        $this->call(MucLuong::class);
-        $this->call(KinhNghiem::class);
-        $this->call(HoSoNTD::class);
-        $this->call(HoSoNTV::class);
-        $this->call(Viec::class);
-        $this->call(CV::class);
-        $this->call(Viec_NTV::class);
+            }
+        }
+            $this->call(TaiKhoan::class);
+            $this->call(Nganh::class);
+            $this->call(Tinh::class);
+            $this->call(HinhThuc::class);
+            $this->call(TrinhDo::class);
+            $this->call(MucLuong::class);
+            $this->call(KinhNghiem::class);
+            $this->call(HoSoNTD::class);
+            $this->call(HoSoNTV::class);
+            $this->call(Viec::class);
+            $this->call(CV::class);
+            $this->call(Viec_NTV::class);
+
     }
+
 }

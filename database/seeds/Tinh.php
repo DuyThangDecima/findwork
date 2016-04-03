@@ -1,27 +1,71 @@
 <?php
+
 class Tinh extends GeneralSeeder
 {
     public $table = 'Tinh';
     public $data = array(
-        array(
-            'MaTinh' => 56,
-            'TenTinh' => 'Thái Bình'
-        ),
-        array(
-            'MaTinh' => 54,
-            'TenTinh' => 'TP. Hồ Chí Minh'
-        ),
-        array(
-            'MaTinh' => 24,
-            'TenTinh' => 'Hà Nội'
-        ),
-        array(
-            'MaTinh' => 39,
-            'TenTinh' => 'Nam Định'
-        ),
-        array(
-            'MaTinh' => 42,
-            'TenTinh' => 'Nghệ An'
-        )
+        array('MaTinh' => 1, 'TenTinh' => 'Hà Nội'),
+        array('MaTinh' => 2, 'TenTinh' => 'Hồ Chí Minh'),
+        array('MaTinh' => 3, 'TenTinh' => 'An Giang'),
+        array('MaTinh' => 4, 'TenTinh' => 'Bà Rịa-Vũng Tàu'),
+        array('MaTinh' => 5, 'TenTinh' => 'Bạc Liêu'),
+        array('MaTinh' => 6, 'TenTinh' => 'Bắc Kạn'),
+        array('MaTinh' => 7, 'TenTinh' => 'Bắc Giang'),
+        array('MaTinh' => 8, 'TenTinh' => 'Bắc Ninh'),
+        array('MaTinh' => 9, 'TenTinh' => 'Bến Tre'),
+        array('MaTinh' => 10, 'TenTinh' => 'Bình Dương'),
+        array('MaTinh' => 11, 'TenTinh' => 'Bình Định'),
+        array('MaTinh' => 12, 'TenTinh' => 'Bình Phước'),
+        array('MaTinh' => 13, 'TenTinh' => 'Bình Thuận'),
+        array('MaTinh' => 14, 'TenTinh' => 'Cà Mau'),
+        array('MaTinh' => 15, 'TenTinh' => 'Cao Bằng'),
+        array('MaTinh' => 16, 'TenTinh' => 'Cần Thơ'),
+        array('MaTinh' => 17, 'TenTinh' => 'Đà Nẵng'),
+        array('MaTinh' => 18, 'TenTinh' => 'Đắk Lắk'),
+        array('MaTinh' => 19, 'TenTinh' => 'Đắk Nông'),
+        array('MaTinh' => 20, 'TenTinh' => 'Điện Biên'),
+        array('MaTinh' => 21, 'TenTinh' => 'Đồng Nai'),
+        array('MaTinh' => 22, 'TenTinh' => 'Đồng Tháp'),
+        array('MaTinh' => 23, 'TenTinh' => 'Gia Lai'),
+        array('MaTinh' => 24, 'TenTinh' => 'Hà Giang'),
+        array('MaTinh' => 25, 'TenTinh' => 'Hà Nam'),
+        array('MaTinh' => 26, 'TenTinh' => 'Hà Tĩnh'),
+        array('MaTinh' => 27, 'TenTinh' => 'Hải Dương'),
+        array('MaTinh' => 28, 'TenTinh' => 'Hải Phòng'),
+        array('MaTinh' => 29, 'TenTinh' => 'Hòa Bình'),
+        array('MaTinh' => 30, 'TenTinh' => 'Hậu Giang'),
+        array('MaTinh' => 31, 'TenTinh' => 'Hưng Yên'),
+        array('MaTinh' => 32, 'TenTinh' => 'Khánh Hòa'),
+        array('MaTinh' => 33, 'TenTinh' => 'Kiên Giang'),
+        array('MaTinh' => 34, 'TenTinh' => 'Kon Tum'),
+        array('MaTinh' => 35, 'TenTinh' => 'Lai Châu'),
+        array('MaTinh' => 36, 'TenTinh' => 'Lào Cai'),
+        array('MaTinh' => 37, 'TenTinh' => 'Lạng Sơn'),
+        array('MaTinh' => 38, 'TenTinh' => 'Lâm Đồng'),
+        array('MaTinh' => 39, 'TenTinh' => 'Long An'),
+        array('MaTinh' => 40, 'TenTinh' => 'Nam Định'),
+        array('MaTinh' => 41, 'TenTinh' => 'Nghệ An'),
+        array('MaTinh' => 42, 'TenTinh' => 'Ninh Bình'),
+        array('MaTinh' => 43, 'TenTinh' => 'Ninh Thuận'),
+        array('MaTinh' => 44, 'TenTinh' => 'Phú Thọ'),
+        array('MaTinh' => 45, 'TenTinh' => 'Phú Yên'),
+        array('MaTinh' => 46, 'TenTinh' => 'Quảng Bình'),
+        array('MaTinh' => 47, 'TenTinh' => 'Quảng Nam'),
+        array('MaTinh' => 48, 'TenTinh' => 'Quảng Ngãi'),
+        array('MaTinh' => 49, 'TenTinh' => 'Quảng Ninh'),
+        array('MaTinh' => 50, 'TenTinh' => 'Quảng Trị'),
+        array('MaTinh' => 51, 'TenTinh' => 'Sóc Trăng'),
+        array('MaTinh' => 52, 'TenTinh' => 'Sơn La'),
+        array('MaTinh' => 53, 'TenTinh' => 'Tây Ninh'),
+        array('MaTinh' => 54, 'TenTinh' => 'Thái Bình'),
+        array('MaTinh' => 55, 'TenTinh' => 'Thái Nguyên'),
+        array('MaTinh' => 56, 'TenTinh' => 'Thanh Hóa'),
+        array('MaTinh' => 57, 'TenTinh' => 'Thừa Thiên - Huế'),
+        array('MaTinh' => 58, 'TenTinh' => 'Tiền Giang'),
+        array('MaTinh' => 59, 'TenTinh' => 'Trà Vinh'),
+        array('MaTinh' => 60, 'TenTinh' => 'Tuyên Quang'),
+        array('MaTinh' => 61, 'TenTinh' => 'Vĩnh Long'),
+        array('MaTinh' => 62, 'TenTinh' => 'Vĩnh Phúc'),
+        array('MaTinh' => 63, 'TenTinh' => 'Yên Bái'),
     );
 }

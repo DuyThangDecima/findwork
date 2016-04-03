@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use DB;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -14,6 +14,21 @@ class HomepageController extends Controller
 
     	return view('homepage');
     }
+    function viewNTD($id){
+        $index = strrpos($id,'-');
+        $id = substr($id,$index+1,strlen($id));
+        $companies = DB::table('HoSoNTD')
+            ->where('MaNTD',$id)
+            ->get();
+        $links = array();
+        $alias = new Alias();
+        foreach($companies  as $company){
+            array_push($links,$alias->convert_vi_to_en($company->TenNTD));
+        }
+        return view('viewwork/detailcompany')->with('companies',$companies );
+    }
+
+
 
     /**
      * Đăng nhập

@@ -147,46 +147,22 @@
     <div class="list-new-work">
         <div class="title-section"><a href="#">CÔNG VIỆC MỚI</a></div>
         <div class="new-work-left">
-            <div class="item-work">
-                <a class="title-work" href="#">Tuyển nhân viên android</a><br>
-                <a class="company-name" href="#">Tập đoàn Bkav</a>
-                <hr>
-            </div>
-            <div class="item-work">
-                <a class="title-work" href="#">Tuyển nhân viên android</a><br>
-                <a class="company-name" href="#">Tập đoàn Bkav</a>
-                <hr>
-            </div>
-            <div class="item-work">
-                <a class="title-work" href="#">Tuyển nhân viên android</a><br>
-                <a class="company-name" href="#">Tập đoàn Bkav</a>
-                <hr>
-            </div>
-            <div class="item-work">
-                <a class="title-work" href="#">Tuyển nhân viên android</a><br>
-                <a class="company-name" href="#">Tập đoàn Bkav</a>
-                <hr>
-            </div>
-            <div class="item-work">
-                <a class="title-work" href="#">Tuyển nhân viên android</a><br>
-                <a class="company-name" href="#">Tập đoàn Bkav</a>
-                <hr>
-            </div>
-            <div class="item-work">
-                <a class="title-work" href="#">Tuyển nhân viên android</a><br>
-                <a class="company-name" href="#">Tập đoàn Bkav</a>
-                <hr>
-            </div>
-
-        </div>
-        <div class="new-work-right">
-            @foreach($new_works as $new_work)
+            @for( $i = 0; $i < 5; $i++)
                 <div class="item-work">
-                    <a class="title-work" href="#">{{$new_work->TenViec}}</a><br>
-                    <a class="company-name" href="#">{{$new_work->TenNTD}}</a>
+                    <a class="title-work" href="{{$linkWorks[$i]}}">{{$new_works[$i]->TenViec}}</a><br>
+                    <a class="company-name" href="./nhatuyendung/{{$linkCompanies[$i]}}">{{$new_works[$i]->TenNTD}}</a>
                     <hr>
                 </div>
-            @endforeach
+            @endfor
+        </div>
+        <div class="new-work-right">
+            @for( $j = 5; $j < 10; $j++)
+                <div class="item-work">
+                    <a class="title-work" href="#">{{$new_works[$j]->TenViec}}</a><br>
+                    <a class="company-name" href="#">{{$new_works[$j]->TenNTD}}</a>
+                    <hr>
+                </div>
+            @endfor
         </div>
         <div style="clear: both; width: 100%">
             <a class="btn-more-list" href="#">

@@ -9,15 +9,19 @@ Class TrinhDo extends GeneralSeeder
         ),
         array(
             'MaTrinhDo' => 2,
-            'TenTrinhDo' => 'Tốt nghiệp phổ thông trung học'
+            'TenTrinhDo' => 'Trung học phổ thông'
         ),
         array(
             'MaTrinhDo' => 3,
-            'TenTrinhDo' => 'Tốt nghiệp đại học '
+            'TenTrinhDo' => 'Cao đẳng'
         ),
         array(
             'MaTrinhDo' => 4,
-            'TenTrinhDo' => 'Đã có kinh nghiệm'
+            'TenTrinhDo' => 'Đại học'
+        ),
+        array(
+            'MaTrinhDo' => 5,
+            'TenTrinhDo' => 'Cao học'
         )
     );
 }

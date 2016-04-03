@@ -16,7 +16,7 @@ class CreateTableViec extends Migration
             $table->integer('MaNganh')->unsigned();
             $table->integer('MaNTD')->unsigned();
             $table->increments('MaViec');
-            $table->string('TenViec',50);
+            $table->string('TenViec',100);
             $table->integer('MaMucLuong')->unsigned();
             $table->integer('SoLuong');
             $table->integer('GioiTinh');
@@ -28,6 +28,7 @@ class CreateTableViec extends Migration
             $table->text('MoTa')->nullable();
             $table->text('YeuCau')->nullable();
             $table->text('QuyenLoi')->nullable();
+
             $table->foreign('MaNganh')->references('MaNganh')->on('Nganh');
             $table->foreign('MaNTD')->references('MaNTD')->on('HoSoNTD');
             $table->foreign('MaMucLuong')->references('MaMucLuong')->on('MucLuong');

@@ -5,23 +5,36 @@ Class KinhNghiem extends GeneralSeeder
     public $data = array(
         array(
             'MaKinhNghiem' => 1,
-            'MucDuoi' => 0,
-            'MucTren' => 1
+            'SoNam' => -1, //Chưa có kinh nghiệm
         ),
         array(
             'MaKinhNghiem' => 2,
-            'MucDuoi' => 1,
-            'MucTren' => 3
+            'SoNam' => 0, //Dưới 1 năm
         ),
         array(
             'MaKinhNghiem' => 3,
-            'MucDuoi' => 3,
-            'MucTren' => 5
+            'SoNam' => 1,//1 năm
         ),
         array(
             'MaKinhNghiem' => 4,
-            'MucDuoi' => 5,
-            'MucTren' => 100
+            'SoNam' => 2,//2 năm
+        ),
+        array(
+            'MaKinhNghiem' => 5,
+            'SoNam' => 3,//3 năm
+        ),
+
+        array(
+            'MaKinhNghiem' => 6,
+            'SoNam' => 4,//4 năm
+        ),
+        array(
+            'MaKinhNghiem' => 7,
+            'SoNam' => 5,//5 năm
+        ),
+        array(
+            'MaKinhNghiem' => 7,
+            'SoNam' => 6,//Trên 5 năm
         )
     );
 }

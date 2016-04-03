@@ -14,8 +14,7 @@ class CreateTableKinhNghiem extends Migration
     {
         Schema::create('KinhNghiem', function(Blueprint $table){
             $table->increments('MaKinhNghiem');
-            $table->integer('MucDuoi');
-            $table->integer('MucTren');
+            $table->integer('SoNam');
         });
     }
 

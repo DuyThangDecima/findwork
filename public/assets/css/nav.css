@@ -402,9 +402,10 @@ li a:hover {
     color: #FFF;
 }
 
-.login_button:hover {
+.login_button:hover, .login_button:focus {
+    color: white;
     background: #521A74;
-
+    text-decoration: none;
 }
 
 #email-error {
@@ -690,7 +691,8 @@ label {
     font-size: 140%;
     border-bottom: 1px solid #63248A;
 }
-.title-section a{
+
+.title-section a {
     color: white;
     width: 250px;
     padding: 14px 100px 14px 30px;
@@ -700,58 +702,65 @@ label {
     text-decoration: none;
     color: white;
 }
-.title-section a:hover,.title-section a:focus{
+
+.title-section a:hover, .title-section a:focus {
     text-decoration: none;
     color: white;
 }
-.list-new-work{
-    overflow:auto; /* fix parent not cover child*/
+
+.list-new-work {
+    overflow: auto; /* fix parent not cover child*/
     clear: both;
-    height:auto;
+    height: auto;
 }
-.new-work-left{
-    width:50%;
+
+.new-work-left {
+    width: 50%;
     float: left;
 }
-.new-work-right{
-    width:50%;
+
+.new-work-right {
+    width: 50%;
     float: left;
 }
-.item-work{
+
+.item-work {
     padding-top: 5px;
     height: 70px;
     width: 95%;
     padding-left: 5px;
 }
-.title-work{
-    width: 100%;
-    display: inline-block;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    font-size: 120%;
-    padding-left: 15px;
-    font-weight: bold;
-    color: #363636;
-}
-.title-work:hover,.title-work:focus{
-    color: #363636;
-}
-.company-name{
+
+.title-work {
     width: 100%;
     display: inline-block;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
     font-size: 110%;
-    padding-left: 15px;
-    color: #808080;
+    font-weight: bold;
+    color: #363636;
 }
-.company-name:hover,.company-name:focus{
+
+.title-work:hover, .title-work:focus {
+    color: #363636;
+}
+
+.company-name {
+    width: 100%;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 110%;
     color: #808080;
 }
 
-.btn-more-list,.btn-more-list:focus{
+.company-name:hover, .company-name:focus {
+    color: #808080;
+}
+
+.btn-more-list, .btn-more-list:focus {
     font-size: 120%;
     font-weight: 700;
     color: #FF6E01;
@@ -768,20 +777,22 @@ label {
     border-right: 1px solid #d1d1d1;
     border-top: 1px solid #d1d1d1;
 }
-.btn-more-list:hover{
+
+.btn-more-list:hover {
     text-decoration: none;
     color: #FF6E01;
     background-repeat: no-repeat;
     background-color: #e5e5e5;
 
 }
-.horizontal-line{
-    clear: both;
+
+.horizontal-line {
     height: 10px;
     width: 100%;
     background: #EEEEEE;
 }
-.icon_more{
+
+.icon_more {
     top: 9px;
     background-image: url("../images/icon_sprites.png");
     background-position: -264px -144px;
@@ -796,7 +807,6 @@ label {
     white-space: normal;
 }
 
-
 /*-------------------------FIELD WORK-----------------------*/
 /*Tiêu đề ở section VIỆC THEO NGÀNH NGHỀ*/
 .title-section-field {
@@ -809,7 +819,7 @@ label {
     border-bottom: 1px solid #63248A;
 }
 
-.title-section-field a{
+.title-section-field a {
     color: white;
     width: 250px;
     padding: 14px 100px 14px 30px;
@@ -819,23 +829,326 @@ label {
     text-decoration: none;
     color: white;
 }
-.title-section-field a:hover,.title-section-field a:focus{
+
+.title-section-field a:hover, .title-section-field a:focus {
     text-decoration: none;
     color: white;
 }
 
-.left-section-field{
+.left-section-field {
     position: inherit;
     width: 30%;
     float: left;
 }
-.center-section-field{
+
+.center-section-field {
     position: relative;
     float: left;
     width: 30%;
 }
-.right-section-field{
+
+.right-section-field {
     position: relative;
     width: 30%;
     float: left;
 }
+
+/*-------------XEM MỘT ITEM WORK---------------------*/
+.infor-item-work {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    width: 100%;
+    overflow: auto;
+}
+
+.title-item-work {
+    color: #4551B5;
+    font-size: 28px !important;
+}
+
+.save-submit {
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.save-submit .btn-save {
+    /*float: left;*/
+    text-decoration: none;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 1px solid #cccccc;
+}
+
+.save-submit .btn-save:hover {
+    background-color: #F5F5F5;
+}
+
+.save-submit .btn-save:hover .icon_save {
+
+    text-decoration: none;
+    background-image: url("../images/icon_sprites.png");
+    background-position: -264px -26px;
+}
+
+.save-submit .btn-save .icon_save {
+    padding-left: 24px;
+    background-image: url("../images/icon_sprites.png");
+    background-position: -240px -26px;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+}
+
+.save-submit .deadline {
+    margin-left: 15px;
+    line-height: 40px;
+}
+
+.icon_deadline {
+    margin-top: 12px;
+    display: inline-block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url("../images/sprites_16_red.png");
+    background-position: -6px -5px;
+    background-repeat: no-repeat;
+}
+
+.icon_deadline2 {
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("../images/sprites_16_red.png") no-repeat -6px -5px;
+}
+
+.pf-24 {
+    padding-left: 24px;
+}
+
+.btn-submit {
+    float: right;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 120%;
+    background: #FF4181;
+    border: #FF4181 solid 1px;
+
+    color: #FFF;
+}
+
+.btn-submit:hover, .btn-submit:focus {
+    color: white;
+    background: #ff465f;
+    text-decoration: none;
+}
+
+.icon_salary {
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("../images/sprites_16.png") no-repeat -6px -5px;
+
+}
+
+.icon_experience {
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("../images/sprites_16.png") no-repeat -56px -27px;
+
+}
+
+.icon_grade {
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("../images/sprites_16.png") no-repeat -128px -5px;
+}
+
+.icon_number {
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("../images/sprites_16.png") no-repeat -54px -5px;
+}
+
+.icon_field {
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("../images/sprites_16.png") no-repeat -80px -24px;
+}
+
+.icon_place {
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("../images/sprites_16.png") no-repeat -28px -5px;
+}
+
+.icon_position {
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("../images/sprites_16.png") no-repeat -54px -5px;
+}
+
+.icon_job {
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("../images/sprites_16.png") no-repeat -82px -5px;
+}
+
+.icon_gender {
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("../images/sprites_16.png") no-repeat -104px -5px;
+}
+
+.icon_age {
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("../images/sprites_16.png") no-repeat -6px -24px;
+}
+
+.title-col {
+    display: table;
+    float: left;
+    width: 20%;
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #808080;
+}
+
+.infor-item-work h4 {
+    color: #4551B5;
+    font-size: 20px !important;
+}
+
+.content-col {
+    float: right;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.title-section-item-work {
+    color: #4551B5;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid #EEEEEE
+}
+
+.pf-28 {
+    padding-left: 28px;
+}
+
+.icon_place_company {
+    display: inline-block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: url("../images/icon_sprites.png") no-repeat -168px -96px;
+}
+
+.icon_scale {
+    display: inline-block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: url("../images/icon_sprites.png") no-repeat -192px -96px;
+}
+
+.icon_phonenumber {
+    display: inline-block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: url("../images/icon_sprites.png") no-repeat -216px -96px;
+}
+
+.icon_website {
+    display: inline-block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: url("../images/icon_sprites.png") no-repeat -240px -96px;
+}
+
+.icon_save {
+    margin-top: 9px;
+    display: inline-block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: url("../images/icon_sprites.png") no-repeat -240px -24px;
+}
+
+.icon_save:hover {
+    background: url("../images/icon_sprites.png") no-repeat -264px -24px;
+}
+
+.btn-save-item{
+    float: left; width: 24px; height: 24px;display: block
+}
+.fl-50percent {
+    float: left;
+    padding-left: 5px;
+    width: 50%
+}
+.fl-15percent {
+    float: left;
+    width: 15%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center
+}
+.center-vertical{
+    display: inline-block;
+}
+.icon_salary-gray{
+    display: inline-block;
+    position: absolute;
+    width:  24px;
+    height: 24px;
+    background: url("../images/icon_sprites.png") no-repeat -312px -0px;
+}
+.icon_place_gray{
+    display: inline-block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: url("../images/icon_sprites.png") no-repeat -336px 0px;
+
+}
+.icon_deadline_gray{
+     display: inline-block;
+     position: absolute;
+     width: 24px;
+     height: 24px;
+     background: url("../images/icon_sprites.png") no-repeat -192px 0px;
+
+ }

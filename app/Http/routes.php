@@ -29,6 +29,9 @@ Route::get('/', function () {
 //Trang chủ
 Route::get('/homepage','WorkController@goHomePage');
 
+Route::get('/detail',function () {
+    return view('viewwork/detailitemwork');
+});
 //Tạo tài khoản
 Route::get('/dangkyntv',function () {
     return view('account/registerntv');
@@ -37,6 +40,10 @@ Route::get('/dangkyntv',function () {
 Route::get('/dangkyntd',function () {
     return view('account/registerntd');
 });
+
+//Trang Công ty
+Route::get('/nhatuyendung/{id}','HomepageController@viewNTD'
+);
 
 
 Route::group(['middleware' => ['web']], function () {

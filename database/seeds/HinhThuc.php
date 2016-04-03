@@ -5,19 +5,23 @@ Class HinhThuc extends GeneralSeeder
     public $data = array(
         array(
             'MaHinhThuc' => 1,
-            'TenHinhThuc' => 'Full time'
+            'TenHinhThuc' => 'Nhân viên chính thức'
         ),
         array(
             'MaHinhThuc' => 2,
-            'TenHinhThuc' => 'Làm theo ca'
+            'TenHinhThuc' => 'Nhân viên thời vụ'
         ),
         array(
             'MaHinhThuc' => 3,
-            'TenHinhThuc' => 'Làm theo giờ'
+            'TenHinhThuc' => 'Bán thời gian'
         ),
         array(
             'MaHinhThuc' => 4,
-            'TenHinhThuc' => 'Thực tập sinh'
+            'TenHinhThuc' => 'Làm thêm ngoài giờ'
+        ),
+        array(
+            'MaHinhThuc' => 5,
+            'TenHinhThuc' => 'Thực tập và dự án'
         )
     );
 }
